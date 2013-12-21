@@ -8,11 +8,11 @@
 <html>
   <body>
 	Message:
-  	<% if (request.getParameter("message") != null) { %>
-		<%= request.getParameter("message")%>
+  	<% if (request.getParameter("pictureName") != null) { %>
+		<%= request.getParameter("pictureName")%>
 	<% } %>
-	<form action="/main" method="post">
-		<div><textarea name="txtInput" rows="3" cols="60"></textarea></div>
+	<form action="/sendPicture" method="post">
+		<div><input type="text" name="pictureName"/></div>
 		<div><input type="submit" value="Submit" /></div>   
   	</form>
   </body>

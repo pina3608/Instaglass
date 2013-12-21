@@ -15,6 +15,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
         <servlet-name>receivePicture</servlet-name>
         <url-pattern>/receivePicture</url-pattern>
     </servlet-mapping>
+    
+   
+    <servlet>
+        <servlet-name>sendPicture</servlet-name>
+        <servlet-class>com.instaglass.server.SendPictureServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendPicture</servlet-name>
+        <url-pattern>/sendPicture</url-pattern>
+    </servlet-mapping>
    
       <!-- Default page to serve -->
   <welcome-file-list>

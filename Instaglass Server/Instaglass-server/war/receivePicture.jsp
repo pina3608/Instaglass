@@ -9,8 +9,8 @@
 
   <body>
 	Insert device Registration_id:
-  	<form action="/receivePicture" method="post">
-		<div><textarea name="txtRegId" rows="3" cols="60"></textarea></div>
+  	<form action="/receivePicture" method="post" enctype="multipart/form-data">
+		<div><input name="image" type="file" id="image"></textarea></div>
 	    <div><input type="submit" value="Submit" /></div>   
   	</form>
   </body>
